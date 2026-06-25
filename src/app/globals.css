@@ -1,26 +1,133 @@
 @import "tailwindcss";
 
+/*
+  NAAM — New American Association of Massachusetts
+  Brand palette sampled from the official logo:
+    deep royal blue  #1B489B   (primary)
+    sky blue / cyan  #3B9DC9   (secondary)
+    warm gold (sun)  #F9C05A   (accent)
+  Light, modern, hopeful NGO theme.
+*/
+
+@theme {
+  /* Brand — primary (deep blue) */
+  --color-brand-50: #eef3fb;
+  --color-brand-100: #d8e3f6;
+  --color-brand-200: #b3c8ec;
+  --color-brand-300: #809fdd;
+  --color-brand-400: #4d72c6;
+  --color-brand-500: #2a52ab;
+  --color-brand-600: #1b489b;
+  --color-brand-700: #163b80;
+  --color-brand-800: #133472;
+  --color-brand-900: #0f2856;
+  --color-brand-950: #0a1a3a;
+
+  /* Secondary — sky blue */
+  --color-sky-soft: #e6f2f9;
+  --color-sky-400: #6cbbdd;
+  --color-sky-500: #3b9dc9;
+  --color-sky-600: #2f86b0;
+
+  /* Accent — warm gold */
+  --color-gold-50: #fef6e7;
+  --color-gold-100: #fdeac4;
+  --color-gold-200: #fbd88c;
+  --color-gold-300: #f9c05a;
+  --color-gold-400: #f4ab33;
+  --color-gold-500: #e09320;
+  --color-gold-600: #c47b14;
+
+  /* Warm neutral ink + surfaces */
+  --color-ink: #14233d;
+  --color-ink-soft: #41506b;
+  --color-cloud: #f5f8fc;
+  --color-cloud-warm: #faf8f3;
+
+  --font-display: var(--font-fraunces);
+  --font-sans: var(--font-inter);
+
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 2rem;
+
+  --shadow-soft: 0 18px 40px -18px rgba(20, 35, 61, 0.28);
+  --shadow-card: 0 10px 30px -12px rgba(20, 35, 61, 0.18);
+}
+
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #14233d;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* Base element styles live in @layer base so Tailwind utilities
+   (e.g. text-white) reliably override them. */
+@layer base {
+  * {
+    border-color: rgba(20, 35, 61, 0.1);
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans), system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: var(--color-gold-200);
+    color: var(--color-brand-900);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display), Georgia, serif;
+    letter-spacing: -0.015em;
+    color: var(--color-ink);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Thin uppercase eyebrow label */
+.eyebrow {
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+/* Reveal-on-scroll base (progressive enhancement) */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
+
+/* Marquee for partner logos */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 38s linear infinite;
+}
+.marquee-mask {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
 }
