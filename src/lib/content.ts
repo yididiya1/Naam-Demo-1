@@ -304,15 +304,17 @@ export const aboutContent = {
 };
 
 /* ---------- Team ---------- */
+// Client's requested structure is Board of Directors / Leadership Team / Program Staff.
+// The Board group is pending — NAAM has not supplied the roster yet.
 export const team = [
   {
-    department: "Leadership",
+    department: "Leadership Team",
     members: [
       { name: "Natasha Soolkin", role: "Executive Director", image: "/images/story-3.jpg", bio: "A longtime advocate for refugees and immigrants, Natasha leads NAAM's mission across all three offices and was recently honored with a Community Advocacy Award." },
     ],
   },
   {
-    department: "Programs",
+    department: "Program Staff",
     members: [
       { name: "Employment Services Team", role: "Employment Specialists", image: "/images/employment.jpg", bio: "Our employment team brings lived experience and deep cultural competence to every job-readiness and placement journey." },
       { name: "ESL Program Team", role: "Instructors & Coordinators", image: "/images/english-class.jpg", bio: "Educators who meet learners at every level — many of whom once sat in these same classrooms." },
