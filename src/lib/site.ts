@@ -308,10 +308,11 @@ export const involveCards = [
      - heroV2.headline and heroV2.subheadline
      - the program blurbs for employment, english, youth, wellness, case-management
 
-   NOT in the original doc — do not treat as client copy:
-     - everything in `haitianStatement` below. The client wrote only "add a
-       section with this statement"; the statement text itself was never supplied.
-     - Immigration Legal Services copy. The client wrote "add or update copy as
+   `haitianStatement` is verbatim from NAAM's own published PDF on naamass.org
+   (July 2 2026, signed by the Executive Director) — not from either doc.
+
+   NOT client copy, still outstanding:
+     - Immigration Legal Services. The client wrote "add or update copy as
        needed" and supplied none, so the prior demo copy still stands.
    ────────────────────────────────────────────────────────────────────────── */
 
@@ -322,15 +323,23 @@ export const heroV2 = {
     "The New American Association of Massachusetts empowers refugees and immigrants by providing essential employment services, language classes, youth programming, case management, trauma-informed care, and legal aid with compassion, dignity, and respect.",
 };
 
-/** PLACEHOLDER — none of this text came from the client. Replace wholesale with
- *  NAAM's real Haitian community statement before this goes in front of them. */
+/** NAAM's real published statement, taken verbatim from the org's own PDF:
+ *  naamass.org/wp-content/uploads/2026/07/NAAM-TPS-Statement-2026-Combined-Jud-Ann-Geneus.pdf
+ *  The homepage shows the opening two paragraphs and links to the full document. */
 export const haitianStatement = {
-  title: "Standing with Our Haitian Community",
-  body:
-    "For more than 35 years, NAAM has stood alongside refugees and immigrants. Today, we stand with our Haitian community as many individuals and families face uncertainty following recent decisions affecting Temporary Protected Status (TPS) for Haiti. We remain committed to responding thoughtfully, compassionately, and responsibly to the needs of our community.",
+  title: "Standing with Our Haitian Community During a Time of Uncertainty",
+  kicker: "A statement from the New American Association of Massachusetts",
+  date: "July 2, 2026",
+  paragraphs: [
+    "For more than 35 years, the New American Association of Massachusetts (NAAM) has stood alongside refugees and immigrants as they build new lives in Massachusetts. Today, we stand with our Haitian community as many individuals and families face uncertainty following the recent U.S. Supreme Court decision affecting Temporary Protected Status (TPS) for Haiti.",
+    "The Haitian community represents the largest population served by our organization. Every year, we have the privilege of working alongside hundreds of Haitian individuals and families through immigration legal services, employment assistance, English language education, youth programming, wellness services, case management, and community engagement. Their resilience, leadership, culture, and contributions strengthen our communities every day.",
+  ],
+  signatory: { name: "Natasha Soolkin", role: "Executive Director" },
   ctaLabel: "Read the Full Statement",
-  // TODO(client asset): link to the full statement PDF / page. Placeholder until supplied.
-  ctaHref: "",
+  ctaHref:
+    "https://naamass.org/wp-content/uploads/2026/07/NAAM-TPS-Statement-2026-Combined-Jud-Ann-Geneus.pdf",
+  // The published PDF carries the statement in all three languages.
+  languagesNote: "Also available in Kreyòl Ayisyen and Français.",
 };
 
 /** The 3x2 homepage grid — six programs, in the order the client specified. */
