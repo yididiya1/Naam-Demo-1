@@ -2,41 +2,49 @@
 
 /*
   NAAM — New American Association of Massachusetts
-  Brand palette sampled from the official logo:
-    deep royal blue  #1B489B   (primary)
-    sky blue / cyan  #3B9DC9   (secondary)
-    warm gold (sun)  #F9C05A   (accent)
+  Brand palette per client spec (v2):
+    primary blue     #1F4798
+    light blue       #3892BD
+    yellow           #EEBA50
+    secondary orange #F8931B
   Light, modern, hopeful NGO theme.
 */
 
 @theme {
-  /* Brand — primary (deep blue) */
-  --color-brand-50: #eef3fb;
-  --color-brand-100: #d8e3f6;
-  --color-brand-200: #b3c8ec;
-  --color-brand-300: #809fdd;
-  --color-brand-400: #4d72c6;
-  --color-brand-500: #2a52ab;
-  --color-brand-600: #1b489b;
-  --color-brand-700: #163b80;
-  --color-brand-800: #133472;
-  --color-brand-900: #0f2856;
-  --color-brand-950: #0a1a3a;
+  /* Brand — primary blue — client spec #1F4798 */
+  --color-brand-50: #eef2fa;
+  --color-brand-100: #d7e0f3;
+  --color-brand-200: #b1c2e6;
+  --color-brand-300: #7f9bd6;
+  --color-brand-400: #4d71bd;
+  --color-brand-500: #2c55a6;
+  --color-brand-600: #1f4798;
+  --color-brand-700: #1a3c80;
+  --color-brand-800: #163271;
+  --color-brand-900: #112655;
+  --color-brand-950: #0b1938;
 
-  /* Secondary — sky blue */
-  --color-sky-soft: #e6f2f9;
-  --color-sky-400: #6cbbdd;
-  --color-sky-500: #3b9dc9;
-  --color-sky-600: #2f86b0;
+  /* Secondary — light blue — client spec #3892BD */
+  --color-sky-soft: #e7f2f8;
+  --color-sky-400: #6bb2d3;
+  --color-sky-500: #3892bd;
+  --color-sky-600: #2d7ba3;
 
-  /* Accent — warm gold */
-  --color-gold-50: #fef6e7;
-  --color-gold-100: #fdeac4;
-  --color-gold-200: #fbd88c;
-  --color-gold-300: #f9c05a;
-  --color-gold-400: #f4ab33;
-  --color-gold-500: #e09320;
-  --color-gold-600: #c47b14;
+  /* Accent — yellow — client spec #EEBA50 */
+  --color-gold-50: #fdf7ea;
+  --color-gold-100: #fbedcc;
+  --color-gold-200: #f6dc9c;
+  --color-gold-300: #eeba50;
+  --color-gold-400: #e0a736;
+  --color-gold-500: #c78e23;
+  --color-gold-600: #a67418;
+
+  /* Secondary — orange — client spec #F8931B */
+  --color-orange-200: #fdd0a0;
+  --color-orange-300: #fbb35c;
+  --color-orange-400: #f8931b;
+  --color-orange-500: #dd7c0c;
+  --color-orange-600: #b56309;
 
   /* Warm neutral ink + surfaces */
   --color-ink: #14233d;
@@ -44,7 +52,8 @@
   --color-cloud: #f5f8fc;
   --color-cloud-warm: #faf8f3;
 
-  --font-display: var(--font-fraunces);
+  /* Client spec: clean sans serif throughout — no serif display face. */
+  --font-display: var(--font-inter);
   --font-sans: var(--font-inter);
 
   --radius-xl: 1rem;
@@ -88,7 +97,7 @@
   h2,
   h3,
   h4 {
-    font-family: var(--font-display), Georgia, serif;
+    font-family: var(--font-display), system-ui, sans-serif;
     letter-spacing: -0.015em;
     color: var(--color-ink);
   }

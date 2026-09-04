@@ -3,8 +3,8 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { MapPin, Phone, Mail, ChevronDown, Menu, X } from "lucide-react";
-import { nav, org, socials, locations } from "@/lib/site";
+import { Phone, Mail, ChevronDown, Menu, X } from "lucide-react";
+import { nav, org, socials } from "@/lib/site";
 import { Button } from "@/components/ui/Button";
 import { socialIconMap } from "@/components/ui/SocialIcons";
 import { cn } from "@/lib/cn";
@@ -27,43 +27,6 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50">
-      {/* Utility bar */}
-      <div className="hidden bg-brand-800 text-white/90 lg:block">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-8 py-2 text-sm">
-          <div className="flex items-center gap-7">
-            <span className="flex items-center gap-2">
-              <MapPin className="h-4 w-4 text-gold-300" strokeWidth={2} />
-              {locations[0].address}, {locations[0].city}
-            </span>
-            <a href={org.phoneHref} className="flex items-center gap-2 hover:text-white">
-              <Phone className="h-4 w-4 text-gold-300" strokeWidth={2} />
-              {org.phone}
-            </a>
-            <a href={`mailto:${org.email}`} className="flex items-center gap-2 hover:text-white">
-              <Mail className="h-4 w-4 text-gold-300" strokeWidth={2} />
-              {org.email}
-            </a>
-          </div>
-          <div className="flex items-center gap-1">
-            {socials.map((s) => {
-              const SocialIcon = socialIconMap[s.icon];
-              return (
-                <a
-                  key={s.name}
-                  href={s.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={s.name}
-                  className="grid h-8 w-8 place-items-center rounded-full transition-colors hover:bg-white/10"
-                >
-                  <SocialIcon className="h-4 w-4" />
-                </a>
-              );
-            })}
-          </div>
-        </div>
-      </div>
-
       {/* Main nav */}
       <div
         className={cn(
@@ -121,6 +84,24 @@ export function Header() {
           </nav>
 
           <div className="flex items-center gap-3">
+            {/* Social links live in the main nav (top banner removed) */}
+            <div className="hidden items-center gap-1 lg:flex">
+              {socials.map((s) => {
+                const SocialIcon = socialIconMap[s.icon];
+                return (
+                  <a
+                    key={s.name}
+                    href={s.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={s.name}
+                    className="grid h-9 w-9 place-items-center rounded-full text-brand-700 transition-colors hover:bg-brand-50 hover:text-brand-600"
+                  >
+                    <SocialIcon className="h-4 w-4" />
+                  </a>
+                );
+              })}
+            </div>
             <span className="hidden sm:block">
               <Button href={org.donateUrl} variant="gold" size="md">
                 Donate Now
@@ -213,6 +194,23 @@ export function Header() {
                 <a href={`mailto:${org.email}`} className="flex items-center gap-2">
                   <Mail className="h-4 w-4 text-brand-600" /> {org.email}
                 </a>
+              </div>
+              <div className="mt-4 flex gap-2">
+                {socials.map((s) => {
+                  const SocialIcon = socialIconMap[s.icon];
+                  return (
+                    <a
+                      key={s.name}
+                      href={s.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={s.name}
+                      className="grid h-10 w-10 place-items-center rounded-full border border-brand-100 text-brand-700"
+                    >
+                      <SocialIcon className="h-4 w-4" />
+                    </a>
+                  );
+                })}
               </div>
             </div>
           </div>

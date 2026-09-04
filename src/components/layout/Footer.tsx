@@ -1,9 +1,8 @@
 import Link from "next/link";
-import { MapPin, Phone, Mail, Clock, ArrowRight } from "lucide-react";
-import { org, nav, socials, locations, hours } from "@/lib/site";
-import { BrandMark } from "@/components/ui/BrandMark";
+import Image from "next/image";
+import { MapPin, Clock, ArrowRight } from "lucide-react";
+import { org, nav, locations, hours } from "@/lib/site";
 import { Container } from "@/components/ui/Container";
-import { socialIconMap } from "@/components/ui/SocialIcons";
 
 export function Footer() {
   const linkColumns = nav.filter((n) => n.children).slice(0, 3);
@@ -12,7 +11,7 @@ export function Footer() {
     <footer className="bg-brand-950 text-white/75">
       {/* Newsletter strip */}
       <Container>
-        <div className="-mb-12 translate-y-[-50%] rounded-3xl bg-gradient-to-r from-brand-600 to-sky-600 px-6 py-8 shadow-soft sm:px-10 sm:py-10">
+        <div className="mt-14 rounded-3xl bg-gradient-to-r from-brand-600 to-sky-600 px-6 py-8 shadow-soft sm:px-10 sm:py-10">
           <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
             <div className="max-w-md">
               <h3 className="text-2xl !text-white sm:text-3xl">Stay connected</h3>
@@ -39,12 +38,18 @@ export function Footer() {
         </div>
       </Container>
 
-      <Container className="pt-28 pb-12">
-        <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr_1.1fr]">
+      <Container className="pt-16 pb-12">
+        <div className="grid gap-x-8 gap-y-10 lg:grid-cols-[1.5fr_1fr_1fr_1fr_1.2fr]">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 text-white">
-              <BrandMark className="h-10 w-10" />
+              <Image
+                src="/images/naam-logo.png"
+                alt={org.name}
+                width={300}
+                height={83}
+                className="h-11 w-auto brightness-0 invert"
+              />
               <span className="font-display text-lg font-semibold leading-tight">
                 New American Association
                 <span className="block text-sm font-normal text-white/60">
@@ -55,23 +60,6 @@ export function Footer() {
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-white/70">
               {org.tagline}
             </p>
-            <div className="mt-6 flex gap-2">
-              {socials.map((s) => {
-                const SocialIcon = socialIconMap[s.icon];
-                return (
-                  <a
-                    key={s.name}
-                    href={s.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={s.name}
-                    className="grid h-10 w-10 place-items-center rounded-full bg-white/10 transition-colors hover:bg-gold-300 hover:text-brand-900"
-                  >
-                    <SocialIcon className="h-4 w-4" />
-                  </a>
-                );
-              })}
-            </div>
           </div>
 
           {/* Link columns */}
@@ -108,15 +96,13 @@ export function Footer() {
                     <span className="font-medium text-white">{loc.name}</span>
                     <br />
                     {loc.address}, {loc.city}
+                    <br />
+                    <a href={loc.phoneHref} className="hover:text-gold-300">
+                      {loc.phone}
+                    </a>
                   </span>
                 </li>
               ))}
-              <li className="flex gap-3">
-                <Phone className="mt-0.5 h-4 w-4 shrink-0 text-gold-300" />
-                <a href={org.phoneHref} className="text-white/70 hover:text-gold-300">
-                  {org.phone}
-                </a>
-              </li>
               <li className="flex gap-3">
                 <Clock className="mt-0.5 h-4 w-4 shrink-0 text-gold-300" />
                 <span className="text-white/70">

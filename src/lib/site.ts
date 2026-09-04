@@ -66,10 +66,10 @@ export const nav: NavItem[] = [
     href: "/programs",
     children: [
       { label: "Employment Services", href: "/programs/employment" },
-      { label: "English Language Training", href: "/programs/english" },
+      { label: "English Language Classes", href: "/programs/english" },
       { label: "Case Management", href: "/programs/case-management" },
-      { label: "Health & Wellness", href: "/programs/wellness" },
-      { label: "Children & Youth", href: "/programs/youth" },
+      { label: "Health and Wellness", href: "/programs/wellness" },
+      { label: "Children and Youth", href: "/programs/youth" },
       { label: "Immigration Legal Services", href: "/programs/citizenship" },
       { label: "Food Pantry", href: "/programs/food-pantry" },
       { label: "Financial Literacy", href: "/programs/financial-literacy" },
@@ -109,15 +109,15 @@ export const programs: Program[] = [
     title: "Employment Services",
     icon: "briefcase",
     blurb:
-      "Case management, job readiness, ESOL for the workplace, and vocational training (CNA, HHA, ServSafe, IT) with placement and retention support.",
+      "NAAM guides and trains newly arrived immigrants and refugees on their journey to stable, rewarding careers and economic self-sufficiency.",
     image: "/images/employment.jpg",
   },
   {
     slug: "english",
-    title: "English Language Training",
+    title: "English Language Classes",
     icon: "languages",
     blurb:
-      "Seven proficiency levels, evening classes, and project-based ELT-I — building the language and cultural skills newcomers need to integrate.",
+      "Our multi-level English language classes are designed to equip immigrants and refugees with the skills needed for the workplace and community integration.",
     image: "/images/english-class.jpg",
   },
   {
@@ -125,23 +125,23 @@ export const programs: Program[] = [
     title: "Case Management",
     icon: "compass",
     blurb:
-      "Personalized navigation of healthcare, benefits, housing, and daily-living skills — building independence, not dependency.",
-    image: "/images/casework.jpg",
+      "Our case management program helps immigrants access housing, social benefits, healthcare, and employment. We provide the skills needed to navigate these systems and achieve long-term independence.",
+    image: "/images/case-management.jpg",
   },
   {
     slug: "wellness",
-    title: "Health & Wellness",
+    title: "Health and Wellness",
     icon: "heart-pulse",
     blurb:
-      "Culturally responsive support groups and the STAR Wellness Clinic, addressing acculturative stress and trauma with wraparound care.",
+      "NAAM offers a comprehensive approach to supporting the psychological and emotional well-being of immigrants and refugees through innovative wellness programming.",
     image: "/images/wellness.jpg",
   },
   {
     slug: "youth",
-    title: "Children & Youth",
+    title: "Children and Youth",
     icon: "graduation-cap",
     blurb:
-      "Playgroups, after-school tutoring, family liaisons, mentoring, and teen job-readiness — empowering the next generation of leaders.",
+      "NAAM provides the next generation with essential resources, education, mentorship, and community collaboration to build life skills and become confident, compassionate leaders.",
     image: "/images/youth.jpg",
   },
   {
@@ -300,3 +300,45 @@ export const involveCards = [
     cta: "Make a donation",
   },
 ];
+
+/* ──────────────────────────────────────────────────────────────────────────
+   v2 CLIENT COPY — diffed against the client's original PDF (Sep 2 2026).
+
+   VERIFIED verbatim against the original doc:
+     - heroV2.headline and heroV2.subheadline
+     - the program blurbs for employment, english, youth, wellness, case-management
+
+   NOT in the original doc — do not treat as client copy:
+     - everything in `haitianStatement` below. The client wrote only "add a
+       section with this statement"; the statement text itself was never supplied.
+     - Immigration Legal Services copy. The client wrote "add or update copy as
+       needed" and supplied none, so the prior demo copy still stands.
+   ────────────────────────────────────────────────────────────────────────── */
+
+export const heroV2 = {
+  headline:
+    "NAAM believes in empowering every refugee and immigrant to thrive and enrich our communities.",
+  subheadline:
+    "The New American Association of Massachusetts empowers refugees and immigrants by providing essential employment services, language classes, youth programming, case management, trauma-informed care, and legal aid with compassion, dignity, and respect.",
+};
+
+/** PLACEHOLDER — none of this text came from the client. Replace wholesale with
+ *  NAAM's real Haitian community statement before this goes in front of them. */
+export const haitianStatement = {
+  title: "Standing with Our Haitian Community",
+  body:
+    "For more than 35 years, NAAM has stood alongside refugees and immigrants. Today, we stand with our Haitian community as many individuals and families face uncertainty following recent decisions affecting Temporary Protected Status (TPS) for Haiti. We remain committed to responding thoughtfully, compassionately, and responsibly to the needs of our community.",
+  ctaLabel: "Read the Full Statement",
+  // TODO(client asset): link to the full statement PDF / page. Placeholder until supplied.
+  ctaHref: "",
+};
+
+/** The 3x2 homepage grid — six programs, in the order the client specified. */
+export const homepageProgramSlugs = [
+  "employment",
+  "english",
+  "youth",
+  "wellness",
+  "case-management",
+  "citizenship",
+] as const;

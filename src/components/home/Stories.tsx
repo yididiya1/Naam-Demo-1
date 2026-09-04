@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Quote, MapPin } from "lucide-react";
+import { MapPin } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
@@ -13,7 +13,7 @@ export function Stories() {
         <SectionHeading
           align="center"
           eyebrow="Real impact"
-          title="Making a difference, one story at a time"
+          title="Making a Difference, One Story at a Time"
           description="Behind every statistic is a person rebuilding a life. Here are a few of the neighbors we're proud to know."
         />
 
@@ -34,9 +34,8 @@ export function Stories() {
                   </span>
                 </div>
                 <figcaption className="flex flex-1 flex-col p-6">
-                  <Quote className="h-8 w-8 text-gold-300" />
-                  <blockquote className="mt-3 flex-1 text-[15px] leading-relaxed text-ink-soft">
-                    “{story.quote}”
+                  <blockquote className="flex-1 text-[15px] leading-relaxed text-ink-soft">
+                    {story.quote}
                   </blockquote>
                   <p className="mt-5 font-display text-lg font-semibold text-ink">
                     {story.name}
