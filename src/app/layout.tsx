@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Sen } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 
-const inter = Inter({
-  variable: "--font-inter",
+// Sen is the typeface used on naamass.org.
+const sen = Sen({
+  variable: "--font-sen",
   subsets: ["latin"],
   display: "swap",
 });
@@ -28,7 +29,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} h-full antialiased`}
+      className={`${sen.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-white">
         <Header />

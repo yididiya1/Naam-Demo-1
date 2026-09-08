@@ -52,9 +52,9 @@
   --color-cloud: #f5f8fc;
   --color-cloud-warm: #faf8f3;
 
-  /* Client spec: clean sans serif throughout — no serif display face. */
-  --font-display: var(--font-inter);
-  --font-sans: var(--font-inter);
+  /* Sen, matching naamass.org. Used for both display and body. */
+  --font-display: var(--font-sen);
+  --font-sans: var(--font-sen);
 
   --radius-xl: 1rem;
   --radius-2xl: 1.5rem;
