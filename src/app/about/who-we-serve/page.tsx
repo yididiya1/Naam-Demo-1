@@ -35,7 +35,7 @@ export default function WhoWeServePage() {
           <p className="mt-4 text-lg leading-relaxed text-ink-soft">
             We are dedicated to comprehensive support and cultural diversity. Our
             wraparound services include language training, employment assistance,
-            legal aid, wellness, and more — designed to meet the real needs of the
+            legal aid, wellness, and more, designed to meet the real needs of the
             people we serve.
           </p>
         </Container>
@@ -128,7 +128,7 @@ export default function WhoWeServePage() {
 
       <CTABand
         title="Questions about eligibility?"
-        text="Call us — interpretation is available in many languages, and we're glad to help you understand your options."
+        text="Call us. Interpretation is available in many languages, and we're glad to help you understand your options."
         actions={[
           { label: `Call ${org.phone}`, href: org.phoneHref },
           { label: "Contact us", href: "/contact", variant: "white" },

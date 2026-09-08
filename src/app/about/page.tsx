@@ -13,7 +13,7 @@ import { stats, org } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Who We Are",
   description:
-    "Since 1990, NAAM has welcomed refugees and immigrants to Massachusetts — promoting stability, building bridges, and honoring cultural identity.",
+    "Since 1990, NAAM has welcomed refugees and immigrants to Massachusetts, promoting stability, building bridges, and honoring cultural identity.",
 };
 
 export default function AboutPage() {
@@ -22,7 +22,7 @@ export default function AboutPage() {
       <PageHeader
         eyebrow="Who we are"
         title="A welcome that lasts well beyond arrival"
-        lead="The New American Association of Massachusetts has spent more than three decades helping newcomers build new lives — with dignity, opportunity, and community."
+        lead="The New American Association of Massachusetts has spent more than three decades helping newcomers build new lives, with dignity, opportunity, and community."
         crumbs={[{ label: "About" }]}
         image="/images/community.jpg"
       />

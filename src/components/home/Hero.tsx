@@ -16,8 +16,8 @@ export function Hero() {
           sizes="100vw"
           className="object-cover object-right"
         />
-        {/* Client asked that the photo NOT be darkened. This is a light scrim —
-            it brightens the left side for legibility instead of dimming the image. */}
+        {/* Client asked that the photo NOT be darkened. This is a light scrim that
+            brightens the left side for legibility instead of dimming the image. */}
         <div className="absolute inset-0 bg-gradient-to-r from-white via-white/85 to-white/10" />
         <div className="absolute inset-0 bg-gradient-to-t from-white/70 via-transparent to-white/40" />
       </div>

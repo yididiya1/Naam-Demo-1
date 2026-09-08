@@ -11,7 +11,7 @@ import { programs, org } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Programs & Services",
   description:
-    "Eight connected programs supporting refugees and immigrants — employment, English, case management, wellness, youth, legal services, food, and financial literacy.",
+    "Eight connected programs supporting refugees and immigrants: employment, English, case management, wellness, youth, legal services, food, and financial literacy.",
 };
 
 export default function ProgramsPage() {
@@ -20,7 +20,7 @@ export default function ProgramsPage() {
       <PageHeader
         eyebrow="Programs & services"
         title="Everything a new American needs, in one place"
-        lead="Our programs connect so people can move from their first English class to their first job, citizenship, and beyond — supported every step of the way."
+        lead="Our programs connect so people can move from their first English class to their first job, citizenship, and beyond, supported every step of the way."
         crumbs={[{ label: "Programs" }]}
       />
 

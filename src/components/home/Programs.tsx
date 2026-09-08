@@ -22,7 +22,7 @@ export function Programs() {
           <SectionHeading
             eyebrow="Programs & services"
             title="Everything a new American needs, in one place"
-            description="Connected programs meet people wherever they are on the journey — from their first English class to their first job, citizenship, and beyond."
+            description="Connected programs meet people wherever they are on the journey, from their first English class to their first job, citizenship, and beyond."
           />
           <Button href="/programs" variant="ghost" size="md" className="shrink-0">
             View all programs

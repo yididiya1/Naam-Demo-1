@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s · NAAM",
   },
   description:
-    "NAAM empowers every refugee and immigrant to thrive — with English classes, job training, legal help, wellness, youth programs, and a culturally welcoming food pantry across Massachusetts.",
+    "NAAM empowers every refugee and immigrant to thrive, with English classes, job training, legal help, wellness, youth programs, and a culturally welcoming food pantry across Massachusetts.",
   metadataBase: new URL("https://www.naamass.org"),
 };
 

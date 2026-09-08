@@ -42,7 +42,7 @@ export function MissionIntro() {
             <SectionHeading
               eyebrow="Who we are"
               title="A welcome that lasts well beyond arrival"
-              description="NAAM helps newly arriving refugees and immigrants integrate into American society — promoting economic stability, building bridges with the wider community, and honoring the cultural identities people carry with them."
+              description="NAAM helps newly arriving refugees and immigrants integrate into American society, promoting economic stability, building bridges with the wider community, and honoring the cultural identities people carry with them."
             />
             <ul className="mt-8 space-y-3">
               {points.map((point, i) => (

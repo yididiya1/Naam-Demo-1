@@ -57,7 +57,7 @@ export default function NewsPage() {
         crumbs={[{ label: "News & Events" }]}
       />
 
-      {/* Most recent — three frames */}
+      {/* Most recent: three frames */}
       <section className="bg-white py-16 sm:py-20">
         <Container>
           <h2 className="mb-10 text-2xl text-ink sm:text-3xl">Latest news</h2>

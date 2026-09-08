@@ -1,4 +1,4 @@
-// Central content for the NAAM site — sourced from naamass.org and reorganized.
+// Central content for the NAAM site, sourced from naamass.org and reorganized.
 
 export const org = {
   name: "New American Association of Massachusetts",
@@ -157,7 +157,7 @@ export const programs: Program[] = [
     title: "Food Pantry",
     icon: "apple",
     blurb:
-      "A weekly, culturally appropriate pantry — rice, beans, halal meat, produce, and hygiene goods — launched in 2024 with Phoenix Food Hub.",
+      "A weekly, culturally appropriate pantry stocked with rice, beans, halal meat, produce, and hygiene goods, launched in 2024 with Phoenix Food Hub.",
     image: "/images/foodpantry.jpg",
   },
   {
@@ -302,14 +302,14 @@ export const involveCards = [
 ];
 
 /* ──────────────────────────────────────────────────────────────────────────
-   v2 CLIENT COPY — diffed against the client's original PDF (Sep 2 2026).
+   v2 CLIENT COPY: diffed against the client's original PDF (Sep 2 2026).
 
    VERIFIED verbatim against the original doc:
      - heroV2.headline and heroV2.subheadline
      - the program blurbs for employment, english, youth, wellness, case-management
 
    `haitianStatement` is verbatim from NAAM's own published PDF on naamass.org
-   (July 2 2026, signed by the Executive Director) — not from either doc.
+   (July 2 2026, signed by the Executive Director), not from either doc.
 
    NOT client copy, still outstanding:
      - Immigration Legal Services. The client wrote "add or update copy as
@@ -342,7 +342,7 @@ export const haitianStatement = {
   languagesNote: "Also available in Kreyòl Ayisyen and Français.",
 };
 
-/** The 3x2 homepage grid — six programs, in the order the client specified. */
+/** The 3x2 homepage grid: six programs, in the order the client specified. */
 export const homepageProgramSlugs = [
   "employment",
   "english",

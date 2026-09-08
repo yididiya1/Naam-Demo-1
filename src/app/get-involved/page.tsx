@@ -11,7 +11,7 @@ import { involveCards, org } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Get Involved",
   description:
-    "Volunteer, donate goods, give, intern, or join our team — there are many meaningful ways to welcome new Americans.",
+    "Volunteer, donate goods, give, intern, or join our team. There are many meaningful ways to welcome new Americans.",
 };
 
 const ways = [
@@ -93,7 +93,7 @@ export default function GetInvolvedPage() {
       <CTABand
         tone="gold"
         title="Prefer to give?"
-        text="Every dollar funds language classes, legal help, and our food pantry — and stays close to home."
+        text="Every dollar funds language classes, legal help, and our food pantry, and stays close to home."
         actions={[{ label: "Make a donation", href: org.donateUrl, variant: "primary" }]}
       />
     </>

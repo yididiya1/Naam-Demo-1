@@ -37,7 +37,7 @@ export default function InternshipsPage() {
         title="Mentorship, impact, and growth"
         body={[
           "Interns and service-learning students work side by side with experienced staff, gaining a front-row view of nonprofit work and direct service to refugees and immigrants.",
-          "We tailor placements to your field of study and career goals — and we'll gladly coordinate with your school or program on requirements and hours.",
+          "We tailor placements to your field of study and career goals, and we'll gladly coordinate with your school or program on requirements and hours.",
         ]}
         bullets={[
           "Placements across all program areas",

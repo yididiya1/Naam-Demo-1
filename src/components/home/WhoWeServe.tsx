@@ -68,8 +68,8 @@ export function WhoWeServe() {
               Questions about eligibility? Call us at{" "}
               <a href={org.phoneHref} className="font-medium text-gold-300 hover:underline">
                 {org.phone}
-              </a>{" "}
-              — interpretation is available in many languages.
+              </a>.
+              Interpretation is available in many languages.
             </p>
           </Reveal>
         </div>

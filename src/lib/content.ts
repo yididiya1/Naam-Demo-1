@@ -36,12 +36,12 @@ export const programDetails: Record<string, ProgramDetail> = {
       eyebrow: "Employment services",
       title: "Two pathways into the workforce",
       paragraphs: [
-        "Our employment specialists meet each person where they are — assessing skills, goals, and barriers, then building a personalized plan toward stable employment and economic independence.",
+        "Our employment specialists meet each person where they are, assessing skills, goals, and barriers, then building a personalized plan toward stable employment and economic independence.",
         "Whether you're referred by the Department of Transitional Assistance or eligible for refugee resettlement services, we walk with you from job readiness through placement and retention.",
       ],
       bullets: [
-        "Employment Support Services Program (ESSP) — for families referred by DTA, with childcare vouchers and an $80/month transportation stipend",
-        "Comprehensive Refugee Employment Services (CRES) — up to 5 years of support for ORR-eligible refugees, asylees, and visa holders",
+        "Employment Support Services Program (ESSP): for families referred by DTA, with childcare vouchers and an $80/month transportation stipend",
+        "Comprehensive Refugee Employment Services (CRES): up to 5 years of support for ORR-eligible refugees, asylees, and visa holders",
       ],
       image: "/images/casework.jpg",
     },
@@ -61,7 +61,7 @@ export const programDetails: Record<string, ProgramDetail> = {
       eyebrow: "Employer partners",
       title: "Building bridges with local employers",
       paragraphs: [
-        "We partner with employers across the North Shore — including Wash Cycle Laundry and Stop & Shop — who value the dedication and talent of new Americans.",
+        "We partner with employers across the North Shore, including Wash Cycle Laundry and Stop & Shop, who value the dedication and talent of new Americans.",
         "Employees consistently describe being treated with respect and given real opportunities to grow. If your business is interested in hiring through NAAM, we'd love to talk.",
       ],
     },
@@ -70,13 +70,13 @@ export const programDetails: Record<string, ProgramDetail> = {
   english: {
     slug: "english",
     title: "Empower your future with language skills",
-    lead: "English classes built around real life — work, school, and community — for immigrants and refugees at every level.",
+    lead: "English classes built around real life, from work to school to community, for immigrants and refugees at every level.",
     heroImage: "/images/english-class.jpg",
     overview: {
       eyebrow: "English language training",
       title: "Language that opens doors",
       paragraphs: [
-        "Our classes address the immediate language and cultural adjustment needs of immigrants and refugees recently settled in Lynn and the North Shore — offered both in person and virtually.",
+        "Our classes address the immediate language and cultural adjustment needs of immigrants and refugees recently settled in Lynn and the North Shore, offered both in person and virtually.",
         "Across seven proficiency levels, from Survival Literacy to Advanced, learners practice through role-plays, interactive games, group work, and mock workplace scenarios.",
       ],
       bullets: [
@@ -91,7 +91,7 @@ export const programDetails: Record<string, ProgramDetail> = {
       title: "A track for every learner",
       items: [
         { icon: "briefcase", title: "English for Employment & Integration", text: "Core classes building the workplace communication and cultural skills newcomers need to thrive." },
-        { icon: "heart-pulse", title: "English Language Training for Integration (ELT-I)", text: "Project-based learning through art, music, wellness, and life skills — for learners not solely focused on employment, including Ukrainian and Afghan participants." },
+        { icon: "heart-pulse", title: "English Language Training for Integration (ELT-I)", text: "Project-based learning through art, music, wellness, and life skills, for learners not solely focused on employment, including Ukrainian and Afghan participants." },
         { icon: "graduation-cap", title: "Lynn Public Schools Parent Program", text: "Classes that help parents communicate with educators and support their children's success in school." },
       ],
     },
@@ -107,7 +107,7 @@ export const programDetails: Record<string, ProgramDetail> = {
   "case-management": {
     slug: "case-management",
     title: "Empowering pathways to independence",
-    lead: "Personalized navigation of the systems newcomers encounter — healthcare, benefits, housing, and daily life — building independence, not dependency.",
+    lead: "Personalized navigation of the systems newcomers encounter, from healthcare and benefits to housing and daily life, building independence, not dependency.",
     heroImage: "/images/casework.jpg",
     overview: {
       eyebrow: "Case management",
@@ -119,7 +119,7 @@ export const programDetails: Record<string, ProgramDetail> = {
       bullets: [
         "Social services coordination and family support",
         "Translation and interpretation services",
-        "Healthcare referrals — medical, dental, and mental health",
+        "Healthcare referrals: medical, dental, and mental health",
         "Daily-living skills like budgeting and home management",
         "Homelessness prevention and benefits navigation",
       ],
@@ -146,7 +146,7 @@ export const programDetails: Record<string, ProgramDetail> = {
       eyebrow: "Health & wellness",
       title: "Care that understands the journey",
       paragraphs: [
-        "Launched in 2022 and led by a licensed psychotherapist, our Wellness Program facilitates support groups for immigrants from Latino, Ukrainian, Afghan, and Cameroonian communities — spaces to connect, share experiences, and build community.",
+        "Launched in 2022 and led by a licensed psychotherapist, our Wellness Program facilitates support groups for immigrants from Latino, Ukrainian, Afghan, and Cameroonian communities, offering spaces to connect, share experiences, and build community.",
         "We welcome referrals for anyone experiencing adjustment difficulties or isolation.",
       ],
       bullets: [
@@ -176,7 +176,7 @@ export const programDetails: Record<string, ProgramDetail> = {
       eyebrow: "Children & youth",
       title: "Support for every age and stage",
       paragraphs: [
-        "Our children and youth services meet families across age groups and locations — pairing academic support with mentoring, recreation, and family connection.",
+        "Our children and youth services meet families across age groups and locations, pairing academic support with mentoring, recreation, and family connection.",
         "The goal is simple: help every child feel they belong, and give every family the tools to support their children's success.",
       ],
       image: "/images/english-class.jpg",
@@ -195,7 +195,7 @@ export const programDetails: Record<string, ProgramDetail> = {
       eyebrow: "Across our offices",
       title: "Location-specific programs",
       paragraphs: [
-        "Lynn offers general youth services. Lowell specializes in family services, case management, and tutoring — including \"In The Driver's Seat,\" an eight-week program covering life skills, financial literacy, and driver's education.",
+        "Lynn offers general youth services. Lowell specializes in family services, case management, and tutoring, including \"In The Driver's Seat,\" an eight-week program covering life skills, financial literacy, and driver's education.",
         "Newburyport provides childcare, school liaison services, case management, field trips, and mentoring.",
       ],
     },
@@ -204,7 +204,7 @@ export const programDetails: Record<string, ProgramDetail> = {
   citizenship: {
     slug: "citizenship",
     title: "Your path to U.S. citizenship",
-    lead: "Trusted, accredited help navigating naturalization — from the N-400 application to the day you take the oath.",
+    lead: "Trusted, accredited help navigating naturalization, from the N-400 application to the day you take the oath.",
     heroImage: "/images/casework.jpg",
     overview: {
       eyebrow: "Immigration legal services",
@@ -227,7 +227,7 @@ export const programDetails: Record<string, ProgramDetail> = {
       items: [
         { icon: "scale", title: "Application assistance", text: "Help completing the N-400 and related waivers accurately and on time." },
         { icon: "graduation-cap", title: "Citizenship classes", text: "Roughly 15 weeks of classes covering U.S. history, government, and English skills." },
-        { icon: "compass", title: "Interview prep", text: "Know what to expect — including civics practice and mock interviews." },
+        { icon: "compass", title: "Interview prep", text: "Know what to expect, including civics practice and mock interviews." },
         { icon: "languages", title: "Online resources", text: "Independent prep and self-assessment with all 120 civics test questions." },
       ],
     },
@@ -243,7 +243,7 @@ export const programDetails: Record<string, ProgramDetail> = {
       title: "Nutritious, culturally appropriate food for all",
       paragraphs: [
         "Launched in 2024 at our Lynn office in partnership with Phoenix Food Hub, our pantry provides culturally sensitive nutrition to immigrant and refugee communities.",
-        "Staff organize each weekly distribution around clients' cultural preferences — so families receive food they recognize, prepare with confidence, and share with pride.",
+        "Staff organize each weekly distribution around clients' cultural preferences, so families receive food they recognize, prepare with confidence, and share with pride.",
       ],
       bullets: [
         "Rice, beans, and fresh vegetables",
@@ -257,7 +257,7 @@ export const programDetails: Record<string, ProgramDetail> = {
       eyebrow: "Weekly operations",
       title: "How it works",
       paragraphs: [
-        "The pantry operates weekly at our Lynn office. To learn about distribution times or to refer a family, contact our team — everyone is welcomed with dignity and respect.",
+        "The pantry operates weekly at our Lynn office. To learn about distribution times or to refer a family, contact our team. Everyone is welcomed with dignity and respect.",
       ],
     },
   },
@@ -297,7 +297,7 @@ export const aboutContent = {
   ],
   values: [
     { icon: "heart-handshake", title: "Dignity", text: "Every person is welcomed with respect for who they are and where they've come from." },
-    { icon: "compass", title: "Empowerment", text: "We build independence and self-sufficiency — never dependency." },
+    { icon: "compass", title: "Empowerment", text: "We build independence and self-sufficiency, never dependency." },
     { icon: "languages", title: "Cultural identity", text: "We help newcomers integrate while honoring the cultures they carry with them." },
     { icon: "hand-heart", title: "Community", text: "We build bridges between new Americans and the neighbors who welcome them." },
   ],
@@ -305,7 +305,7 @@ export const aboutContent = {
 
 /* ---------- Team ---------- */
 // Client's requested structure is Board of Directors / Leadership Team / Program Staff.
-// The Board group is pending — NAAM has not supplied the roster yet.
+// The Board group is pending: NAAM has not supplied the roster yet.
 export const team = [
   {
     department: "Leadership Team",
@@ -317,7 +317,7 @@ export const team = [
     department: "Program Staff",
     members: [
       { name: "Employment Services Team", role: "Employment Specialists", image: "/images/employment.jpg", bio: "Our employment team brings lived experience and deep cultural competence to every job-readiness and placement journey." },
-      { name: "ESL Program Team", role: "Instructors & Coordinators", image: "/images/english-class.jpg", bio: "Educators who meet learners at every level — many of whom once sat in these same classrooms." },
+      { name: "ESL Program Team", role: "Instructors & Coordinators", image: "/images/english-class.jpg", bio: "Educators who meet learners at every level, many of whom once sat in these same classrooms." },
       { name: "Case Management Team", role: "Case Managers", image: "/images/casework.jpg", bio: "Multilingual case managers who navigate complex systems alongside the families they serve." },
       { name: "Youth Program Team", role: "Youth Coordinators", image: "/images/youth.jpg", bio: "Mentors and tutors devoted to helping young new Americans thrive in school and beyond." },
       { name: "Wellness Team", role: "Clinicians & Facilitators", image: "/images/wellness.jpg", bio: "Led by a licensed psychotherapist, providing culturally responsive mental health support." },
@@ -337,10 +337,10 @@ export const volunteerRoles: IconCardItem[] = [
 
 export const donateGoods = {
   accepted: [
-    "Baby items — diapers, strollers, formula",
-    "Technology — Chromebooks and laptops",
+    "Baby items: diapers, strollers, formula",
+    "Technology: Chromebooks and laptops",
     "School supplies and backpacks",
-    "Gift cards — Target, Walmart, grocery stores",
+    "Gift cards: Target, Walmart, grocery stores",
     "Charlie Cards for public transit",
     "Unopened paper products",
     "Unopened cleaning supplies",
@@ -372,7 +372,7 @@ export const resourceGroups: ResourceGroup[] = [
     title: "Meals & Food Pantries",
     blurb: "Food assistance, pantries, and pre-screening for benefits.",
     items: [
-      { name: "My Brother's Table", detail: "Free, welcoming meals — the largest soup kitchen on the North Shore." },
+      { name: "My Brother's Table", detail: "Free, welcoming meals at the largest soup kitchen on the North Shore." },
       { name: "Salvation Army Food Pantry", detail: "Groceries and emergency food assistance." },
       { name: "Catholic Charities North", detail: "Pantry and family support services." },
       { name: "Project Bread Hotline", detail: "Food-stamp pre-screening at 1-800-645-8333." },
@@ -393,10 +393,10 @@ export const resourceGroups: ResourceGroup[] = [
     title: "Safety & Crisis Support",
     blurb: "24-hour, multilingual hotlines for domestic violence and sexual assault.",
     items: [
-      { name: "National Domestic Violence Hotline", detail: "1-800-799-3224 — confidential, 24/7." },
-      { name: "RAINN", detail: "1-800-656-4673 — sexual assault support." },
-      { name: "SafeLink / Casa Myrna", detail: "877-785-2020 — statewide DV hotline." },
-      { name: "HAWC", detail: "1-800-547-1649 — Healing Abuse Working for Change." },
+      { name: "National Domestic Violence Hotline", detail: "1-800-799-3224. Confidential, 24/7." },
+      { name: "RAINN", detail: "1-800-656-4673. Sexual assault support." },
+      { name: "SafeLink / Casa Myrna", detail: "877-785-2020. Statewide DV hotline." },
+      { name: "HAWC", detail: "1-800-547-1649. Healing Abuse Working for Change." },
     ],
   },
   {
@@ -404,7 +404,7 @@ export const resourceGroups: ResourceGroup[] = [
     title: "Behavioral Health & Support",
     blurb: "Counseling, support groups, and family engagement services.",
     items: [
-      { name: "Lynn Community Health — Behavioral", detail: "Counseling and behavioral health services." },
+      { name: "Lynn Community Health (Behavioral)", detail: "Counseling and behavioral health services." },
       { name: "Bridgewell Counseling", detail: "Individual and family counseling services." },
       { name: "Baby Cafe", detail: "Support for expectant and breastfeeding mothers." },
     ],

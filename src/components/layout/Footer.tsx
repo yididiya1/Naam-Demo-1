@@ -16,7 +16,7 @@ export function Footer() {
             <div className="max-w-md">
               <h3 className="text-2xl !text-white sm:text-3xl">Stay connected</h3>
               <p className="mt-2 text-white/80">
-                Get stories, events, and ways to help — straight to your inbox.
+                Get stories, events, and ways to help, sent straight to your inbox.
               </p>
             </div>
             <form className="flex w-full max-w-md gap-2" action="#">

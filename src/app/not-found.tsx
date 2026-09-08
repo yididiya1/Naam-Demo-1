@@ -11,7 +11,7 @@ export default function NotFound() {
         <h1 className="mt-3 text-4xl sm:text-5xl">This page is on its way</h1>
         <p className="mx-auto mt-4 max-w-md text-lg text-ink-soft">
           We&apos;re rolling out the redesigned NAAM site one section at a time.
-          The homepage is ready — explore it while we finish the rest.
+          The homepage is ready. Explore it while we finish the rest.
         </p>
         <div className="mt-8 flex justify-center gap-3">
           <Button href="/" variant="primary" size="lg">

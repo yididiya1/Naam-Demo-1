@@ -8,7 +8,7 @@ import { org } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Volunteer",
   description:
-    "NAAM relies on dedicated volunteers — mentor, tutor ESOL, drive, or share a professional skill to help new Americans thrive.",
+    "NAAM relies on dedicated volunteers who mentor, tutor ESOL, drive, or share a professional skill to help new Americans thrive.",
 };
 
 const volunteerForm =
@@ -29,7 +29,7 @@ export default function VolunteerPage() {
         eyebrow="The impact of volunteering"
         title="Your time changes lives"
         body={[
-          "Volunteers power much of what we do — from the classroom to the food pantry to the job interview. We welcome applicants with interest or experience in any of our program areas, and we accept commitments of varying lengths.",
+          "Volunteers power much of what we do, from the classroom to the food pantry to the job interview. We welcome applicants with interest or experience in any of our program areas, and we accept commitments of varying lengths.",
           "Whether you can give an hour a week or a few days a month, your presence helps a newcomer feel seen, supported, and at home.",
         ]}
         image="/images/english-class.jpg"

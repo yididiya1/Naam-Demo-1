@@ -9,7 +9,7 @@ import { team } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Our Team",
   description:
-    "Meet the team behind NAAM — many of whom are immigrants and refugees themselves, bringing lived experience and deep cultural competence.",
+    "Meet the team behind NAAM, many of whom are immigrants and refugees themselves, bringing lived experience and deep cultural competence.",
 };
 
 export default function TeamPage() {
@@ -18,7 +18,7 @@ export default function TeamPage() {
       <PageHeader
         eyebrow="Our team"
         title="The people who make the welcome real"
-        lead="With deep cultural competence and a shared commitment to economic stability, education, and community integration — many of our staff have walked this journey themselves."
+        lead="With deep cultural competence and a shared commitment to economic stability, education, and community integration, many of our staff have walked this journey themselves."
         crumbs={[{ label: "About", href: "/about" }, { label: "Our Team" }]}
       />
 

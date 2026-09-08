@@ -19,7 +19,7 @@ export default function ContactPage() {
       <PageHeader
         eyebrow="Contact us"
         title="We'd love to hear from you"
-        lead="Whether you need services, want to volunteer, or have a question, reach out — interpretation is available in many languages."
+        lead="Whether you need services, want to volunteer, or have a question, reach out. Interpretation is available in many languages."
         crumbs={[{ label: "Contact" }]}
       />
 
