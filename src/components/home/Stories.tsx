@@ -8,10 +8,11 @@ import { stories } from "@/lib/site";
 
 export function Stories() {
   return (
-    <section className="bg-cloud py-20 sm:py-28">
+    <section className="bg-brand-900 py-20 sm:py-28">
       <Container>
         <SectionHeading
           align="center"
+          light
           eyebrow="Real impact"
           title="Making a Difference, One Story at a Time"
           description="Behind every statistic is a person rebuilding a life. Here are a few of the neighbors we're proud to know."
@@ -47,7 +48,7 @@ export function Stories() {
         </div>
 
         <div className="mt-12 text-center">
-          <Button href="/about/who-we-serve" variant="outline" size="lg">
+          <Button href="/about/who-we-serve" variant="white" size="lg">
             Hear more stories
           </Button>
         </div>

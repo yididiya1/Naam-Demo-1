@@ -17,7 +17,7 @@ export function HaitianStatement() {
   } = haitianStatement;
 
   return (
-    <section className="bg-sky-soft py-16 sm:py-20">
+    <section className="bg-brand-600 py-16 sm:py-20">
       <Container>
         <Reveal>
           <div className="mx-auto max-w-3xl rounded-3xl border-l-4 border-orange-400 bg-white p-8 shadow-card sm:p-10">

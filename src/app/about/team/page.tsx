@@ -33,19 +33,18 @@ export default function TeamPage() {
               {group.members.map((m, i) => (
                 <Reveal key={m.name} delay={(i % 3) * 0.07}>
                   <figure className="group h-full overflow-hidden rounded-3xl border border-brand-100 bg-white">
-                    <div className="relative aspect-[4/3] overflow-hidden">
+                    <div className="relative aspect-square overflow-hidden">
                       <Image
                         src={m.image}
                         alt={m.name}
                         fill
                         sizes="(max-width:768px) 100vw, 33vw"
-                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                        className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                       />
                     </div>
-                    <figcaption className="p-6">
+                    <figcaption className="p-5">
                       <h3 className="text-lg text-ink">{m.name}</h3>
                       <p className="text-sm font-semibold text-brand-600">{m.role}</p>
-                      <p className="mt-3 text-sm leading-relaxed text-ink-soft">{m.bio}</p>
                     </figcaption>
                   </figure>
                 </Reveal>

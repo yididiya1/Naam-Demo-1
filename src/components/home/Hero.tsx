@@ -6,7 +6,9 @@ import { org, heroV2 } from "@/lib/site";
 
 export function Hero() {
   return (
-    <section className="relative isolate overflow-hidden bg-white">
+    <section className="relative isolate overflow-hidden bg-brand-900">
+      {/* The photo runs full strength. The client asked that it not be darkened, so the
+          message sits on its own panel rather than behind a wash over the whole image. */}
       <div className="absolute inset-0 -z-10">
         <Image
           src="/images/hero.jpg"
@@ -14,25 +16,21 @@ export function Hero() {
           fill
           priority
           sizes="100vw"
-          className="object-cover object-right"
+          className="object-cover object-center"
         />
-        {/* Client asked that the photo NOT be darkened. This is a light scrim that
-            brightens the left side for legibility instead of dimming the image. */}
-        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/85 to-white/10" />
-        <div className="absolute inset-0 bg-gradient-to-t from-white/70 via-transparent to-white/40" />
       </div>
 
-      <Container className="relative py-20 sm:py-28 lg:py-36">
-        <div className="max-w-2xl">
-          <h1 className="font-display text-3xl font-semibold leading-[1.12] text-brand-900 sm:text-4xl lg:text-5xl">
+      <Container className="relative py-14 sm:py-20 lg:py-24">
+        <div className="max-w-xl rounded-3xl bg-white/95 p-8 shadow-soft sm:p-10">
+          <h1 className="font-display text-3xl font-bold leading-[1.14] text-brand-800 sm:text-4xl lg:text-[2.6rem]">
             {heroV2.headline}
           </h1>
 
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-soft">
+          <p className="mt-5 text-base leading-relaxed text-ink-soft sm:text-lg">
             {heroV2.subheadline}
           </p>
 
-          <div className="mt-9 flex flex-wrap items-center gap-3">
+          <div className="mt-8 flex flex-wrap items-center gap-3">
             <Button href="/programs" variant="primary" size="lg">
               Explore our programs
               <ArrowRight className="h-5 w-5" />

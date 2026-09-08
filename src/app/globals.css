@@ -25,7 +25,7 @@
   --color-brand-950: #0b1938;
 
   /* Secondary — light blue — client spec #3892BD */
-  --color-sky-soft: #e7f2f8;
+  --color-sky-soft: #dbeaf4;
   --color-sky-400: #6bb2d3;
   --color-sky-500: #3892bd;
   --color-sky-600: #2d7ba3;
@@ -49,8 +49,8 @@
   /* Warm neutral ink + surfaces */
   --color-ink: #14233d;
   --color-ink-soft: #41506b;
-  --color-cloud: #f5f8fc;
-  --color-cloud-warm: #faf8f3;
+  --color-cloud: #e9eff8;
+  --color-cloud-warm: #f5f0e4;
 
   /* Sen, matching naamass.org. Used for both display and body. */
   --font-display: var(--font-sen);
